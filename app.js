@@ -22,16 +22,17 @@ Ext.application({
     models: [
         'Verse',
         'Topic',
-        'Subtopic'
+        'Subtopic',
+        'Topic2'
     ],
     stores: [
         'Verses',
         'Topics',
-        'Subtopics'
+        'Subtopics',
+        'Topics2'
     ],
     views: [
-        'MainPortrait',
-        'MP3'
+        'MainPortrait'
     ],
     controllers: [
         'Controller'

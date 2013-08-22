@@ -59,22 +59,8 @@
                 }
             ]
         },
-        "a7edb770-5b04-4ca6-8df6-71f9f4d5187f": {
-            "id": "a7edb770-5b04-4ca6-8df6-71f9f4d5187f",
-            "cn": [
-                {
-                    "id": "f65eed70-142f-41c1-85c3-515f7d99f7d7"
-                }
-            ]
-        },
         "1c608974-bb69-469e-9459-723b0c28fe99": {
-            "id": "1c608974-bb69-469e-9459-723b0c28fe99",
-            "expanded": false,
-            "cn": [
-                {
-                    "id": "c7a2a531-501c-45af-bd7f-bf70ff78e4d3"
-                }
-            ]
+            "id": "1c608974-bb69-469e-9459-723b0c28fe99"
         },
         "2caa9f32-f15f-49a7-8df4-9f1d71e20769": {
             "id": "2caa9f32-f15f-49a7-8df4-9f1d71e20769",
@@ -85,6 +71,7 @@
         },
         "167205a3-3047-4b56-b80c-ab3f0f6e707a": {
             "id": "167205a3-3047-4b56-b80c-ab3f0f6e707a",
+            "expanded": false,
             "cn": [
                 {
                     "id": "2f66c89a-53c7-4503-9aa8-3072fe991f82"
@@ -117,6 +104,7 @@
         },
         "d926b05f-8075-4ed0-9652-6cd03d8548b3": {
             "id": "d926b05f-8075-4ed0-9652-6cd03d8548b3",
+            "expanded": false,
             "cn": [
                 {
                     "id": "14ee0c03-7c7d-4977-8620-d34a0595f6a0"
@@ -151,7 +139,6 @@
             "d926b05f-8075-4ed0-9652-6cd03d8548b3",
             "2caa9f32-f15f-49a7-8df4-9f1d71e20769",
             "6887b99d-807e-4ce6-aab7-54499fde361e",
-            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f",
             "b05fc99c-2806-40f8-9519-b6fc1a8e287e"
         ]
     },
@@ -160,10 +147,10 @@
     },
     "inspectorState": {
         "topInstance": "e05f29d8-0701-42d4-b4ab-5175e718180a",
-        "selectedInstance": "864458fa-eb75-4958-9cdd-84ff19b9eb77"
+        "selectedInstance": "660d8d58-afa5-4a8b-92ec-79b990d03316"
     },
     "codeState": {
-        "topInstance": "e05f29d8-0701-42d4-b4ab-5175e718180a"
+        "topInstance": "705b2ab0-ac6d-4753-8d68-5f1a62a4797a"
     },
     "editMode": "design"
 }

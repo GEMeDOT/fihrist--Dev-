@@ -72,14 +72,6 @@
             ],
             "className": "Subtopics"
         },
-        "a7edb770-5b04-4ca6-8df6-71f9f4d5187f": {
-            "paths": [
-                "metadata/view/MP3",
-                "app/view/override/MP3.js",
-                "app/view/MP3.js"
-            ],
-            "className": "MP3"
-        },
         "b05fc99c-2806-40f8-9519-b6fc1a8e287e": {
             "paths": [
                 "metadata/controller/Controller",
@@ -91,8 +83,7 @@
     },
     "viewOrderMap": {
         "view": [
-            "e05f29d8-0701-42d4-b4ab-5175e718180a",
-            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f"
+            "e05f29d8-0701-42d4-b4ab-5175e718180a"
         ],
         "store": [
             "1c608974-bb69-469e-9459-723b0c28fe99",
