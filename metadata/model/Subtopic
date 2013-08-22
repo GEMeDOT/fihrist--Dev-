@@ -1,0 +1,51 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Subtopic",
+        "designer|userAlias": "subtopic"
+    },
+    "designerId": "d926b05f-8075-4ed0-9652-6cd03d8548b3",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "UID"
+            },
+            "designerId": "14ee0c03-7c7d-4977-8620-d34a0595f6a0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "designerId": "f615562d-a41e-459f-ae9f-de1d4ba56080"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "verse"
+            },
+            "designerId": "72f0edea-4d3d-4071-be8e-13f76bdbd9f2"
+        }
+    ]
+}

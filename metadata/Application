@@ -1,0 +1,29 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Verse",
+            "Topic",
+            "Subtopic"
+        ],
+        "stores": [
+            "Verses",
+            "Topics",
+            "Subtopics"
+        ],
+        "views": [
+            "MainPortrait",
+            "MP3"
+        ],
+        "controllers": [
+            "Controller"
+        ],
+        "name": "Fihrist"
+    },
+    "designerId": "application"
+}

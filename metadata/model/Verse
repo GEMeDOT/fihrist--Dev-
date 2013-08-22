@@ -1,0 +1,62 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Verse"
+    },
+    "designerId": "167205a3-3047-4b56-b80c-ab3f0f6e707a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "UID"
+            },
+            "designerId": "2f66c89a-53c7-4503-9aa8-3072fe991f82"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "MP3URL"
+            },
+            "designerId": "c20cffef-356f-40b8-a317-f0a0c12e5c75"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "LocalURL"
+            },
+            "designerId": "2d4a1373-6713-4758-a5b8-9bfdbddadc30"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "designerId": "22fead5b-b934-4240-9192-7b316f4aa1eb"
+        }
+    ]
+}

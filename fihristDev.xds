@@ -1,0 +1,117 @@
+{
+    "name": "fihristDev",
+    "settings": {
+        "urlPrefix": "http://localhost:8888/fihristDev/",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "2435892b-176b-4caa-9d0a-61fc273af78b": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "e05f29d8-0701-42d4-b4ab-5175e718180a": {
+            "paths": [
+                "metadata/view/MainPortrait",
+                "app/view/override/MainPortrait.js",
+                "app/view/MainPortrait.js"
+            ],
+            "className": "MainPortrait"
+        },
+        "167205a3-3047-4b56-b80c-ab3f0f6e707a": {
+            "paths": [
+                "metadata/model/Verse",
+                "app/model/override/Verse.js",
+                "app/model/Verse.js"
+            ],
+            "className": "Verse"
+        },
+        "1c608974-bb69-469e-9459-723b0c28fe99": {
+            "paths": [
+                "metadata/store/Verses",
+                "app/store/override/Verses.js",
+                "app/store/Verses.js"
+            ],
+            "className": "Verses"
+        },
+        "0ba0c2b4-699e-4a3b-a1f1-cf934899ef28": {
+            "paths": [
+                "metadata/model/Topic",
+                "app/model/override/Topic.js",
+                "app/model/Topic.js"
+            ],
+            "className": "Topic"
+        },
+        "d926b05f-8075-4ed0-9652-6cd03d8548b3": {
+            "paths": [
+                "metadata/model/Subtopic",
+                "app/model/override/Subtopic.js",
+                "app/model/Subtopic.js"
+            ],
+            "className": "Subtopic"
+        },
+        "2caa9f32-f15f-49a7-8df4-9f1d71e20769": {
+            "paths": [
+                "metadata/store/Topics",
+                "app/store/override/Topics.js",
+                "app/store/Topics.js"
+            ],
+            "className": "Topics"
+        },
+        "6887b99d-807e-4ce6-aab7-54499fde361e": {
+            "paths": [
+                "metadata/store/Subtopics",
+                "app/store/override/Subtopics.js",
+                "app/store/Subtopics.js"
+            ],
+            "className": "Subtopics"
+        },
+        "a7edb770-5b04-4ca6-8df6-71f9f4d5187f": {
+            "paths": [
+                "metadata/view/MP3",
+                "app/view/override/MP3.js",
+                "app/view/MP3.js"
+            ],
+            "className": "MP3"
+        },
+        "b05fc99c-2806-40f8-9519-b6fc1a8e287e": {
+            "paths": [
+                "metadata/controller/Controller",
+                "app/controller/override/Controller.js",
+                "app/controller/Controller.js"
+            ],
+            "className": "Controller"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "e05f29d8-0701-42d4-b4ab-5175e718180a",
+            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f"
+        ],
+        "store": [
+            "1c608974-bb69-469e-9459-723b0c28fe99",
+            "2caa9f32-f15f-49a7-8df4-9f1d71e20769",
+            "6887b99d-807e-4ce6-aab7-54499fde361e"
+        ],
+        "controller": [
+            "b05fc99c-2806-40f8-9519-b6fc1a8e287e"
+        ],
+        "model": [
+            "167205a3-3047-4b56-b80c-ab3f0f6e707a",
+            "0ba0c2b4-699e-4a3b-a1f1-cf934899ef28",
+            "d926b05f-8075-4ed0-9652-6cd03d8548b3"
+        ],
+        "resource": [
+            "2435892b-176b-4caa-9d0a-61fc273af78b"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
