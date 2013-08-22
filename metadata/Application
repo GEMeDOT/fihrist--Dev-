@@ -9,17 +9,16 @@
         "models": [
             "Verse",
             "Topic",
-            "Subtopic",
-            "Topic2"
+            "Subtopic"
         ],
         "stores": [
             "Verses",
             "Topics",
-            "Subtopics",
-            "Topics2"
+            "Subtopics"
         ],
         "views": [
-            "MainPortrait"
+            "MainPortrait",
+            "MP3"
         ],
         "controllers": [
             "Controller"

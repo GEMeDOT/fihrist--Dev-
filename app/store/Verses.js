@@ -116,6 +116,9 @@ Ext.define('Fihrist.store.Verses', {
             }
         ],
         model: 'Fihrist.model.Verse',
-        storeId: 'verses'
+        storeId: 'verses',
+        proxy: {
+            type: 'localstorage'
+        }
     }
 });

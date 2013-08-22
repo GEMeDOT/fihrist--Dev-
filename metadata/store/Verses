@@ -31,5 +31,16 @@
         "storeId": "verses",
         "designer|userClassName": "Verses"
     },
-    "designerId": "1c608974-bb69-469e-9459-723b0c28fe99"
+    "designerId": "1c608974-bb69-469e-9459-723b0c28fe99",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "c7a2a531-501c-45af-bd7f-bf70ff78e4d3"
+        }
+    ]
 }
