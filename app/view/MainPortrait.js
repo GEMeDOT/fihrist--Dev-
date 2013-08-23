@@ -143,7 +143,7 @@ Ext.define('Fihrist.view.MainPortrait', {
 
                             var vText = vrec.data.text;
                             var vMP3URL = vrec.data.MP3URL;
-                            var baseURL = 'resources/sesdosyalar/';
+                            var baseURL = 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/';
                             var vURL = baseURL + vMP3URL;
 
                             //text = text + '------- <a href="' + vURL + '">' + vText + '</a><br />';
