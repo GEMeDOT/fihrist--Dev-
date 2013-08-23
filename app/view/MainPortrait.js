@@ -65,7 +65,9 @@ Ext.define('Fihrist.view.MainPortrait', {
                                         items: [
                                             {
                                                 xtype: 'audio',
-                                                docked: 'top'
+                                                docked: 'top',
+                                                itemId: 'vmp3',
+                                                autoResume: true
                                             }
                                         ]
                                     }
@@ -103,11 +105,11 @@ Ext.define('Fihrist.view.MainPortrait', {
         var panel = container.down('#concepts');
         panel.removeAll();
 
+        var vMp3 = panel.getComponent('vmp3');
+
         var text = '';
         var subtopic = record.data.subtopic;
-        var subTopicLabel = Ext.create('Ext.Label', {
-            html:'subtopic label'
-        });
+
         if ( subtopic ) {
             var subList = subtopic.split(',');
 
@@ -123,7 +125,11 @@ Ext.define('Fihrist.view.MainPortrait', {
                     //    html: '<strong>' + rec.data.text + '</strong><br />'
                     //});
                     //panel.add([myPanel]);
-                    panel.add([subTopicLabel]);
+                    //panel.add([subTopicLabel]);
+                    var myPanel = Ext.create('Ext.Panel', {
+                        html: '<strong>' + rec.data.text + '</strong><br />'
+                    });
+                    panel.add( {xtype: 'panel', padding: 10, items: [myPanel] });
 
                     var verseListing = rec.data.verse;
                     var verseList = verseListing.split(',');
@@ -139,9 +145,21 @@ Ext.define('Fihrist.view.MainPortrait', {
                             //text = text + '------- <a href="' + vURL + '">' + vText + '</a><br />';
                             var button = Ext.create('Ext.Button', {
                                 text: vText,
-                                itemID: vrec.data.UID,
-                                handler : function(){
-                                    alert('tap: ' + e.text);
+                                itemId: vURL,
+                                iconCls: 'arrow_right',
+                                iconMask: true,
+                                iconAlign: 'right',
+                                handler : function(b,e){
+                                    //alert('tap: ' + this.getItemId());
+                                    vMp3.setUrl( this.getItemId() );
+                                    //vMp3.play();
+                                    if (vMp3.isPlaying()){
+                                        vMp3.pause();
+                                        b.setIconCls('arrow_right');
+                                    } else {
+                                        vMp3.play();
+                                        b.setIconCls('delete');
+                                    }
                                 }
                             });
                             panel.add({ xtype: 'container', padding: 10, items: [button] });

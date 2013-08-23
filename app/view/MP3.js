@@ -27,6 +27,12 @@ Ext.define('Fihrist.view.MP3', {
                 ui: 'light',
                 enableControls: true,
                 url: 'l;kj;ljkq'
+            },
+            {
+                xtype: 'button',
+                iconAlign: 'right',
+                iconCls: 'arrow_right',
+                text: 'MyButton'
             }
         ]
     }
