@@ -72,36 +72,26 @@
             ],
             "className": "Subtopics"
         },
-        "a7edb770-5b04-4ca6-8df6-71f9f4d5187f": {
+        "100f182d-f38d-4d56-844a-e9400f92d848": {
             "paths": [
-                "metadata/view/MP3",
-                "app/view/override/MP3.js",
-                "app/view/MP3.js"
+                "metadata/view/AudioPlayer",
+                "app/view/override/AudioPlayer.js",
+                "app/view/AudioPlayer.js"
             ],
-            "className": "MP3"
-        },
-        "b05fc99c-2806-40f8-9519-b6fc1a8e287e": {
-            "paths": [
-                "metadata/controller/Controller",
-                "app/controller/override/Controller.js",
-                "app/controller/Controller.js"
-            ],
-            "className": "Controller"
+            "className": "AudioPlayer"
         }
     },
     "viewOrderMap": {
         "view": [
             "e05f29d8-0701-42d4-b4ab-5175e718180a",
-            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f"
+            "100f182d-f38d-4d56-844a-e9400f92d848"
         ],
         "store": [
             "1c608974-bb69-469e-9459-723b0c28fe99",
             "2caa9f32-f15f-49a7-8df4-9f1d71e20769",
             "6887b99d-807e-4ce6-aab7-54499fde361e"
         ],
-        "controller": [
-            "b05fc99c-2806-40f8-9519-b6fc1a8e287e"
-        ],
+        "controller": [],
         "model": [
             "167205a3-3047-4b56-b80c-ab3f0f6e707a",
             "0ba0c2b4-699e-4a3b-a1f1-cf934899ef28",

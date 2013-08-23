@@ -31,10 +31,7 @@ Ext.application({
     ],
     views: [
         'MainPortrait',
-        'MP3'
-    ],
-    controllers: [
-        'Controller'
+        'AudioPlayer'
     ],
     name: 'Fihrist',
 
