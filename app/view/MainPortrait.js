@@ -67,7 +67,8 @@ Ext.define('Fihrist.view.MainPortrait', {
                                                 xtype: 'audio',
                                                 docked: 'top',
                                                 itemId: 'vmp3',
-                                                autoResume: true
+                                                autoResume: true,
+                                                preload: false
                                             }
                                         ]
                                     }

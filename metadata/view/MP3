@@ -24,6 +24,7 @@
                 "itemId": "mp3",
                 "ui": "light",
                 "enableControls": true,
+                "preload": false,
                 "url": "l;kj;ljkq"
             },
             "designerId": "f65eed70-142f-41c1-85c3-515f7d99f7d7"

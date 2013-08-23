@@ -26,6 +26,7 @@ Ext.define('Fihrist.view.MP3', {
                 itemId: 'mp3',
                 ui: 'light',
                 enableControls: true,
+                preload: false,
                 url: 'l;kj;ljkq'
             },
             {
