@@ -46,10 +46,6 @@
 	
 	<preference name="android-installLocation" value="auto" />
 	
-	<access origin="*" browserOnly="true" />
-	<access origin="http://gemission.org" browserOnly="true" />
-	<access origin="http://gemedot.com" browserOnly="true" />
-	<access origin="http://gemstone-media.com" browserOnly="true" />
-	<access origin="http://www.amazon.com" browserOnly="true" />
-	<access origin="/" browserOnly="true" />
+	<access origin="*" />
+
 </widget>
