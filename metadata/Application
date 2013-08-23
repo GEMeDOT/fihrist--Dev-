@@ -18,7 +18,10 @@
         ],
         "views": [
             "MainPortrait",
-            "AudioPlayer"
+            "MP3"
+        ],
+        "controllers": [
+            "Controller"
         ],
         "name": "Fihrist"
     },

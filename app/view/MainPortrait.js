@@ -65,7 +65,7 @@ Ext.define('Fihrist.view.MainPortrait', {
                                         items: [
                                             {
                                                 xtype: 'audio',
-                                                itemId: 'vmp3'
+                                                docked: 'top'
                                             }
                                         ]
                                     }
@@ -103,11 +103,11 @@ Ext.define('Fihrist.view.MainPortrait', {
         var panel = container.down('#concepts');
         panel.removeAll();
 
-        var vMp3 = panel.getComponent('vmp3');
-
         var text = '';
         var subtopic = record.data.subtopic;
-
+        var subTopicLabel = Ext.create('Ext.Label', {
+            html:'subtopic label'
+        });
         if ( subtopic ) {
             var subList = subtopic.split(',');
 
@@ -119,11 +119,11 @@ Ext.define('Fihrist.view.MainPortrait', {
                 rec = subTopics.findRecord('UID', subList[i]);
                 if (rec) {
                     //text = text + '--' + rec.data.text + '<br />';
-                    var myPanel = Ext.create('Ext.Panel', {
-                        html: '<strong>' + rec.data.text + '</strong><br />'
-                    });
-                    panel.add( {xtype: 'panel', padding: 10, items: [myPanel] });
-
+                    //var myPanel = Ext.create('Ext.Panel', {
+                    //    html: '<strong>' + rec.data.text + '</strong><br />'
+                    //});
+                    //panel.add([myPanel]);
+                    panel.add([subTopicLabel]);
 
                     var verseListing = rec.data.verse;
                     var verseList = verseListing.split(',');
@@ -139,90 +139,12 @@ Ext.define('Fihrist.view.MainPortrait', {
                             //text = text + '------- <a href="' + vURL + '">' + vText + '</a><br />';
                             var button = Ext.create('Ext.Button', {
                                 text: vText,
-                                itemId: vURL,
-                                iconCls: 'arrow_right',
-                                iconMask: true,
-                                width: 200,
-                                handler : function(b,e){
-                                    alert('tap: ' + this.getItemId());
-                                    vMp3.setUrl( this.getItemId() );
-                                    vMp3.play();
-
-                                    /* var vMp3 = Ext.create('Ext.Panel', {
-                                    modal      : true,
-                                    hideOnMaskTap: true,
-                                    autoDestroy: true,
-                                    centered   : true,
-                                    border: 0,
-                                    scrollable : false,
-                                    width      : '70%',
-                                    height     : '70%',
-                                    layout     : {
-                                    type  : 'vbox',
-                                    align : 'stetch'
-                                    },
-                                    items      : [{
-                                    xtype:'fieldset',
-                                    title: 'some title',
-                                    items:[{
-                                    xtype:'audio',
-                                    url: 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Mat5_10-13.mp3',
-                                    title:'Sample MP3',
-                                    autoDestroy: true,
-                                    autoResume: false,
-                                    enableControls: false,
-                                    autoPause: true
-                                    },{
-                                    xtype: 'button',
-                                    text: 'Play',
-                                    iconCls: 'arrow_right',
-                                    iconMask: true,
-                                    autoDestroy: true,
-                                    width: 50,
-                                    handler: function(b,e) {
-                                    var audio = this.getParent().down('audio');
-                                    if (audio.isPlaying()) {
-                                    audio.pause();
-                                    b.setText('Play audio');
-                                    b.setIconCls('arrow_right');
-                                    } else {
-                                    audio.play();
-                                    b.setText('Pause Audio');
-                                    b.setIconCls('delete');
-                                    }
-                                    if (b.isHidden()) {
-                                    audio.pause();
-                                    alert('audio is hidden');
-                                    };
-                                    }
-                                    },{
-                                    xtype : 'slider',
-                                    width: '30%',
-                                    autoDestroy: true,
-                                    listeners: [{dragstart : 'onSliderDragStart'},{drag : 'onSliderDrag'}]
-                                    }]
-                                    }]
-                                    });
-                                    container.add( [vMp3] );
-
-                                    function onSliderDrag(slider, thumb, value) {
-                                    alert('onsliderdrag');
-                                    var audioCmp = this.down('audio'),
-                                    duration = audioCmp.element.dom.childNodes[0].duration;
-
-                                    value = value[0];
-
-                                    audioCmp.setCurrentTime((value / 100) * duration);
-                                    audioCmp.play();
-                                    }
-
-                                    */
-
+                                itemID: vrec.data.UID,
+                                handler : function(){
+                                    alert('tap: ' + e.text);
                                 }
                             });
                             panel.add({ xtype: 'container', padding: 10, items: [button] });
-
-
 
                         } else {
                             text = text + '---+-- No verse found';
