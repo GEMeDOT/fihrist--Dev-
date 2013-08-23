@@ -2,7 +2,8 @@
     "name": "fihristDev",
     "settings": {
         "urlPrefix": "http://localhost:8888/fihristDev/",
-        "exportPath": ""
+        "exportPath": "",
+        "sdkPath": "/Users/courtneyroes/Documents/touch-2.2.1"
     },
     "xdsVersion": "2.2.2",
     "xdsBuild": 991,
@@ -87,6 +88,14 @@
                 "app/controller/Controller.js"
             ],
             "className": "Controller"
+        },
+        "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e": {
+            "paths": [
+                "metadata/resource/packager",
+                "",
+                "packager.json"
+            ],
+            "className": "packager"
         }
     },
     "viewOrderMap": {
@@ -108,7 +117,8 @@
             "d926b05f-8075-4ed0-9652-6cd03d8548b3"
         ],
         "resource": [
-            "2435892b-176b-4caa-9d0a-61fc273af78b"
+            "2435892b-176b-4caa-9d0a-61fc273af78b",
+            "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e"
         ],
         "app": [
             "application"
