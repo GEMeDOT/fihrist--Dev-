@@ -61,7 +61,13 @@ Ext.define('Fihrist.view.MainPortrait', {
                                         ],
                                         layout: {
                                             type: 'fit'
-                                        }
+                                        },
+                                        items: [
+                                            {
+                                                xtype: 'audio',
+                                                itemId: 'vmp3'
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -134,84 +140,88 @@ Ext.define('Fihrist.view.MainPortrait', {
                             var button = Ext.create('Ext.Button', {
                                 text: vText,
                                 itemId: vURL,
-                                handler : function(){
-                                    //alert('tap: ' + this.getItemId());
-                                    //vMp3.setUrl( this.getItemId() );
-                                    //vMp3.play();
+                                iconCls: 'arrow_right',
+                                iconMask: true,
+                                width: 200,
+                                handler : function(b,e){
+                                    alert('tap: ' + this.getItemId());
+                                    vMp3.setUrl( this.getItemId() );
+                                    vMp3.play();
 
-                                    var vMp3 = Ext.create('Ext.Panel', {
-                                        modal      : true,
-                                        hideOnMaskTap: true,
-                                        autoDestroy: true,
-                                        centered   : true,
-                                        border: 0,
-                                        scrollable : false,
-                                        width      : '70%',
-                                        height     : '70%',
-                                        layout     : {
-                                            type  : 'vbox',
-                                            align : 'stetch'
-                                        },
-                                        items      : [{
-                                            xtype:'fieldset',
-                                            title: 'some title',
-                                            items:[{
-                                                xtype:'audio',
-                                                url: 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Mat5_10-13.mp3',
-                                                title:'Sample MP3',
-                                                autoDestroy: true,
-                                                autoResume: false,
-                                                enableControls: false,
-                                                autoPause: true
-                                            },{
-                                                xtype: 'button',
-                                                text: 'Play',
-                                                iconCls: 'arrow_right',
-                                                iconMask: true,
-                                                autoDestroy: true,
-                                                width: 50,
-                                                handler: function(b,e) {
-                                                    var audio = this.getParent().down('audio');
-                                                    if (audio.isPlaying()) {
-                                                        audio.pause();
-                                                        b.setText('Play audio');
-                                                        b.setIconCls('arrow_right');
-                                                    } else {
-                                                        audio.play();
-                                                        b.setText('Pause Audio');
-                                                        b.setIconCls('delete');
-                                                    }
-                                                    if (b.isHidden()) {
-                                                        audio.pause();
-                                                        alert('audio is hidden');
-                                                    };
-                                                }
-                                            },{
-                                                xtype : 'slider',
-                                                width: '30%',
-                                                autoDestroy: true,
-                                                listeners: [{dragstart : 'onSliderDragStart'},{drag : 'onSliderDrag'}]
-                                            }]
-                                        }]
+                                    /* var vMp3 = Ext.create('Ext.Panel', {
+                                    modal      : true,
+                                    hideOnMaskTap: true,
+                                    autoDestroy: true,
+                                    centered   : true,
+                                    border: 0,
+                                    scrollable : false,
+                                    width      : '70%',
+                                    height     : '70%',
+                                    layout     : {
+                                    type  : 'vbox',
+                                    align : 'stetch'
+                                    },
+                                    items      : [{
+                                    xtype:'fieldset',
+                                    title: 'some title',
+                                    items:[{
+                                    xtype:'audio',
+                                    url: 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Mat5_10-13.mp3',
+                                    title:'Sample MP3',
+                                    autoDestroy: true,
+                                    autoResume: false,
+                                    enableControls: false,
+                                    autoPause: true
+                                    },{
+                                    xtype: 'button',
+                                    text: 'Play',
+                                    iconCls: 'arrow_right',
+                                    iconMask: true,
+                                    autoDestroy: true,
+                                    width: 50,
+                                    handler: function(b,e) {
+                                    var audio = this.getParent().down('audio');
+                                    if (audio.isPlaying()) {
+                                    audio.pause();
+                                    b.setText('Play audio');
+                                    b.setIconCls('arrow_right');
+                                    } else {
+                                    audio.play();
+                                    b.setText('Pause Audio');
+                                    b.setIconCls('delete');
+                                    }
+                                    if (b.isHidden()) {
+                                    audio.pause();
+                                    alert('audio is hidden');
+                                    };
+                                    }
+                                    },{
+                                    xtype : 'slider',
+                                    width: '30%',
+                                    autoDestroy: true,
+                                    listeners: [{dragstart : 'onSliderDragStart'},{drag : 'onSliderDrag'}]
+                                    }]
+                                    }]
                                     });
                                     container.add( [vMp3] );
 
                                     function onSliderDrag(slider, thumb, value) {
-                                        alert('onsliderdrag');
-                                        var audioCmp = this.down('audio'),
-                                            duration = audioCmp.element.dom.childNodes[0].duration;
+                                    alert('onsliderdrag');
+                                    var audioCmp = this.down('audio'),
+                                    duration = audioCmp.element.dom.childNodes[0].duration;
 
-                                        value = value[0];
+                                    value = value[0];
 
-                                        audioCmp.setCurrentTime((value / 100) * duration);
-                                        audioCmp.play();
+                                    audioCmp.setCurrentTime((value / 100) * duration);
+                                    audioCmp.play();
                                     }
 
-
+                                    */
 
                                 }
                             });
                             panel.add({ xtype: 'container', padding: 10, items: [button] });
+
 
 
                         } else {

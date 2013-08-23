@@ -154,12 +154,15 @@
                                                     "                    var button = Ext.create('Ext.Button', {",
                                                     "                        text: vText,",
                                                     "                        itemId: vURL,",
-                                                    "                        handler : function(){",
-                                                    "                            //alert('tap: ' + this.getItemId());",
-                                                    "                            //vMp3.setUrl( this.getItemId() );",
-                                                    "                            //vMp3.play();",
+                                                    "                        iconCls: 'arrow_right',",
+                                                    "                        iconMask: true,",
+                                                    "                        width: 200,",
+                                                    "                        handler : function(b,e){",
+                                                    "                            alert('tap: ' + this.getItemId());",
+                                                    "                            vMp3.setUrl( this.getItemId() );",
+                                                    "                            vMp3.play();",
                                                     "",
-                                                    "                            var vMp3 = Ext.create('Ext.Panel', {",
+                                                    "                            /* var vMp3 = Ext.create('Ext.Panel', {",
                                                     "                                    modal      : true,",
                                                     "                                    hideOnMaskTap: true,",
                                                     "                                \tautoDestroy: true,",
@@ -227,11 +230,12 @@
                                                     "                                audioCmp.play();",
                                                     "                            }",
                                                     "",
-                                                    "",
+                                                    "\t\t\t\t\t\t\t*/",
                                                     "",
                                                     "                        }",
                                                     "                    });",
                                                     "                    panel.add({ xtype: 'container', padding: 10, items: [button] });",
+                                                    "                    ",
                                                     "",
                                                     "",
                                                     "                } else {",
@@ -279,6 +283,20 @@
                                     },
                                     "designerId": "864458fa-eb75-4958-9cdd-84ff19b9eb77",
                                     "cn": [
+                                        {
+                                            "type": "Ext.Audio",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "vmp3",
+                                                "designer|displayName": "vMP3",
+                                                "designer|createAlias": null
+                                            },
+                                            "designerId": "90befcab-1760-4b40-be0f-7b93ab4de5e7"
+                                        },
                                         {
                                             "type": "Ext.XTemplate",
                                             "reference": {
