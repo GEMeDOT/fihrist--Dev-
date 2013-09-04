@@ -169,7 +169,7 @@ Ext.define('Fihrist.view.MainPortrait', {
                                         }
                                     }
                                     function playAndroidNativeSound(s) {
-                                        var src = this.getItemID();
+                                        var src = 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Rom8_18-22.mp3';
                                         var media = new Media(src);
                                         media.play();
                                     }
