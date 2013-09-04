@@ -7,8 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "packager",
-        "applicationName": "fihristDev",
-        "applicationId": "com.mycompany.myAppID",
+        "applicationName": "fihrist",
+        "applicationId": "com.GEMeDOT.fihrist",
         "versionString": "1.0",
         "versionCode": "1",
         "icon": [
@@ -16,9 +16,13 @@
         ],
         "inputPath": "./",
         "outputPath": "../build/",
-        "configuration": "Debug",
-        "platform": "iOSSimulator",
+        "configuration": "Release",
+        "platform": "Android",
         "deviceType": "Universal",
+        "certificatePath": "../Certificates/android-test.keystore",
+        "certificateAlias": "phedra",
+        "certificatePassword": "allenroes",
+        "sdkPath": "/Applications/android-sdk-mac_86",
         "androidAPILevel": "8",
         "permissions": [
             "INTERNET",
