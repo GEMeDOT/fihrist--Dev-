@@ -155,16 +155,25 @@ Ext.define('Fihrist.view.MainPortrait', {
                                 iconAlign: 'right',
                                 handler : function(b,e){
                                     //alert('tap: ' + this.getItemId());
-                                    vMp3.setUrl( this.getItemId() );
-                                    //vMp3.play();
-                                    if (vMp3.isPlaying()){
-                                        vMp3.pause();
-                                        b.setIconCls('arrow_right');
+                                    if (Ext.browser.is.WebView && Ext.os.is.Android) {
+                                        this.playAndroidNativeSound(s);
                                     } else {
-                                        vMp3.play();
-                                        b.setIconCls('delete');
+                                        vMp3.setUrl( this.getItemId() );
+                                        //vMp3.play();
+                                        if (vMp3.isPlaying()){
+                                            vMp3.pause();
+                                            b.setIconCls('arrow_right');
+                                        } else {
+                                            vMp3.play();
+                                            b.setIconCls('delete');
+                                        }
                                     }
-                                }
+                                    function playAndroidNativeSound(s) {
+                                        var src = this.getItemID();
+                                        var media = new Media(src);
+                                        media.play();
+                                    }
+                                }	
                             });
                             panel.add({ xtype: 'container', padding: 10, items: [button] });
 
