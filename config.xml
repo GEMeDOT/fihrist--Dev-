@@ -15,8 +15,6 @@
 		Courtney Roes
 	</author>
 	
-	<access origin="http://www.kutsalkitap.org" />
-	
 	<preference name="phonegap-version" value="2.9.0" />
 	
 	<preference name="fullscreen" value="true" />
@@ -47,5 +45,10 @@
 	<preference name="permissions" value="none"/>
 	
 	<preference name="android-installLocation" value="auto" />
+
+
+	<access origin="http://www.kutsalkitap.org" />	
+	<plugin name="Media" value="org.apache.cordova.AudioHandler" />
+	<plugin name="Media" value="CDVSound" />
 
 </widget>
