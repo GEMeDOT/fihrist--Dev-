@@ -48,7 +48,6 @@
 
 
 	<access origin="http://www.kutsalkitap.org" />	
-	<plugin name="Media" value="org.apache.cordova.AudioHandler" />
-	<plugin name="Media" value="CDVSound" />
+	<feature name="http://api.phonegap.com/1.0/media"/>
 
 </widget>
