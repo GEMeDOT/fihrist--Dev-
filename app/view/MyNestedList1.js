@@ -18,11 +18,11 @@ Ext.define('Fihrist.view.MyNestedList1', {
 
     config: {
         scrollable: true,
-        backText: 'Whoa',
         detailCard: {
             xclass: 'Fihrist.view.MyPanel3'
         },
         store: 'NestedTopics',
+        title: 'fihrist',
         layout: {
             animation: 'slide',
             type: 'card'
@@ -37,7 +37,11 @@ Ext.define('Fihrist.view.MyNestedList1', {
 
     onNestedlistLeafItemTap: function(nestedlist, list, index, target, record, e, eOpts) {
         var detailCard = nestedlist.getDetailCard();
-        detailCard.setHtml('You selected: ' + record.get('url'));
+        //detailCard.setHtml(record.get('vtext'));
+        var VerseText = detailCard.getComponent( 'versetext' );
+        VerseText.setHtml(record.get('vtext'));
+        var audioURL = detailCard.getComponent('mp3player');
+        audioURL.setUrl(record.get('url'));
     }
 
 });

@@ -22,7 +22,7 @@
                 "hidden": true,
                 "itemId": "mp3player",
                 "designer|displayName": "MP3Player",
-                "url": "http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Rom8_18-22.mp3"
+                "url": null
             },
             "designerId": "9a572659-f7e8-4cfb-b879-a1adeb8dfca9"
         },
@@ -34,7 +34,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "centered": false,
+                "docked": "top",
                 "itemId": "controls",
+                "margin": "20 auto",
+                "maxWidth": "30%",
+                "padding": null,
                 "designer|displayName": "Controls",
                 "iconAlign": "center",
                 "iconCls": "arrow_right",
@@ -75,10 +80,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "border": 5,
+                "centered": true,
                 "docked": null,
                 "height": null,
                 "itemId": "versetext",
                 "ui": "light",
+                "width": "90%",
                 "designer|displayName": "VerseText"
             },
             "designerId": "5b68521c-5a69-40b4-93bd-53dce421d484"

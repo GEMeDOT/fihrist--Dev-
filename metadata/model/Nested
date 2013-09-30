@@ -34,6 +34,18 @@
                 "name": "url"
             },
             "designerId": "2fcbe4c5-e1a0-41e6-a438-62f20389ca38"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "vtext"
+            },
+            "designerId": "a593dd84-8ca4-46d9-b40b-892d3c235680"
         }
     ]
 }

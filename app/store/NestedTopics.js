@@ -26,14 +26,15 @@ Ext.define('Fihrist.store.NestedTopics', {
             text: 'Groceries',
             items: [
                 {
-                    text: 'Drinks',
+                    text: 'acı',
                     items: [
                         {
-                            text: 'Water',
+                            text: 'yozlaşmış bir dünyanın sonucu',
                             items: [
                                 {
-                                    text: 'Sparkling',
-                                    url: 'some url',
+                                    text: 'ROMALILAR 8:18-22',
+                                    url: 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Rom8_18-22.mp3',
+                                    vtext: 'ROMALILAR 8:18-22 (TCL02)<br/><br/>Kanım şu ki, bu anın acıları, gözümüzün önüne serilecek yücelikle karşılaştırılmaya değmez. Yaratılış, Tanrı çocuklarının ortaya çıkmasını büyük özlemle bekliyor. Çünkü yaratılış amaçsızlığa teslim edildi. Bu da yaratılışın isteğiyle değil, onu amaçsızlığa teslim eden Tanrı nın isteğiyle oldu. Çünkü yaratılışın, yozlaşmaya köle olmaktan kurtarılıp Tanrı çocuklarının yüce özgürlüğüne kavuşturulması umudu vardı.',
                                     leaf: true
                                 },
                                 {
@@ -99,20 +100,6 @@ Ext.define('Fihrist.store.NestedTopics', {
         },
         model: 'Fihrist.model.Nested',
         storeId: 'NestedTopics',
-        defaultRootProperty: 'items',
-        fields: [
-            {
-                name: 'Topic'
-            },
-            {
-                name: 'Subtopic'
-            },
-            {
-                name: 'Verse'
-            },
-            {
-                name: 'URL'
-            }
-        ]
+        defaultRootProperty: 'items'
     }
 });

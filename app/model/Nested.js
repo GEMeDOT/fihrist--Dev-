@@ -24,6 +24,9 @@ Ext.define('Fihrist.model.Nested', {
             },
             {
                 name: 'url'
+            },
+            {
+                name: 'vtext'
             }
         ]
     }

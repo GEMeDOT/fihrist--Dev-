@@ -10,12 +10,13 @@
         "data": [
             "{ text: 'Groceries',",
             "     items: [{",
-            "         text: 'Drinks',",
+            "         text: 'acı',",
             "         items: [{",
-            "             text: 'Water',",
+            "             text: 'yozlaşmış bir dünyanın sonucu',",
             "             items: [{",
-            "                 text: 'Sparkling',",
-            "                 url: 'some url',",
+            "                 text: 'ROMALILAR 8:18-22',",
+            "                 url: 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Rom8_18-22.mp3',",
+            "                 vtext: \"ROMALILAR 8:18-22 (TCL02)<br/><br/>Kanım şu ki, bu anın acıları, gözümüzün önüne serilecek yücelikle karşılaştırılmaya değmez. Yaratılış, Tanrı çocuklarının ortaya çıkmasını büyük özlemle bekliyor. Çünkü yaratılış amaçsızlığa teslim edildi. Bu da yaratılışın isteğiyle değil, onu amaçsızlığa teslim eden Tanrı nın isteğiyle oldu. Çünkü yaratılışın, yozlaşmaya köle olmaktan kurtarılıp Tanrı çocuklarının yüce özgürlüğüne kavuşturulması umudu vardı.\",",
             "                 leaf: true",
             "             }, {",
             "                 text: 'Still',",
@@ -69,55 +70,5 @@
         "defaultRootId": null,
         "defaultRootProperty": "items"
     },
-    "designerId": "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c",
-    "cn": [
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "Topic"
-            },
-            "designerId": "6095d645-51d7-4c86-9ed7-49ecb098ac6d"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "Subtopic"
-            },
-            "designerId": "16235062-c048-4c92-ae5b-c8156432f6a8"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "Verse"
-            },
-            "designerId": "18978f19-fb86-4b30-96bb-72af28501f86"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "URL"
-            },
-            "designerId": "07642525-71b1-474d-8086-329ee644e6e9"
-        }
-    ]
+    "designerId": "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c"
 }

@@ -10,9 +10,10 @@
         "designer|userClassName": "MyNestedList1",
         "designer|initialView": true,
         "scrollable": true,
-        "backText": "Whoa",
+        "backText": null,
         "detailCard": "MyPanel3",
-        "store": "NestedTopics"
+        "store": "NestedTopics",
+        "title": "fihrist"
     },
     "designerId": "1785addf-d6ea-4f14-9129-a926f11ff166",
     "cn": [
@@ -27,7 +28,11 @@
                 "fn": "onNestedlistLeafItemTap",
                 "implHandler": [
                     "var detailCard = nestedlist.getDetailCard();",
-                    "detailCard.setHtml('You selected: ' + record.get('url'));"
+                    "//detailCard.setHtml(record.get('vtext'));",
+                    "var VerseText = detailCard.getComponent( 'versetext' );",
+                    "VerseText.setHtml(record.get('vtext'));",
+                    "var audioURL = detailCard.getComponent('mp3player');",
+                    "audioURL.setUrl(record.get('url'));"
                 ],
                 "name": "leafitemtap"
             },

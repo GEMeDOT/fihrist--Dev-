@@ -21,19 +21,25 @@ Ext.define('Fihrist.view.MyPanel3', {
             {
                 xtype: 'audio',
                 hidden: true,
-                itemId: 'mp3player',
-                url: 'http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Rom8_18-22.mp3'
+                itemId: 'mp3player'
             },
             {
                 xtype: 'button',
+                centered: false,
+                docked: 'top',
                 itemId: 'controls',
+                margin: '20 auto',
+                maxWidth: '30%',
                 iconAlign: 'center',
                 iconCls: 'arrow_right'
             },
             {
                 xtype: 'component',
+                border: 5,
+                centered: true,
                 itemId: 'versetext',
-                ui: 'light'
+                ui: 'light',
+                width: '90%'
             }
         ],
         listeners: [
