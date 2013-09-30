@@ -19,6 +19,13 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+    viewport: {
+        layout: {
+            animation: 'slide',
+            type: 'card'
+        }
+    },
+
     models: [
         'Verse',
         'Topic',
@@ -31,7 +38,9 @@ Ext.application({
     ],
     views: [
         'MainPortrait',
-        'MP3'
+        'MP3',
+        'Topics',
+        'SubTopics'
     ],
     controllers: [
         'Controller'
@@ -40,7 +49,7 @@ Ext.application({
 
     launch: function() {
 
-        Ext.create('Fihrist.view.MainPortrait', {fullscreen: true});
+        Ext.create('Fihrist.view.Topics', {fullscreen: true});
     }
 
 });

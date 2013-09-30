@@ -6,8 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MainPortrait",
-        "designer|initialView": true
+        "designer|userClassName": "MainPortrait"
     },
     "designerId": "e05f29d8-0701-42d4-b4ab-5175e718180a",
     "cn": [

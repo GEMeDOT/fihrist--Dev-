@@ -96,12 +96,30 @@
                 "packager.json"
             ],
             "className": "packager"
+        },
+        "4156fd1e-d8b5-47ae-9ba3-b73eaf3742cb": {
+            "paths": [
+                "metadata/view/Topics",
+                "app/view/override/Topics.js",
+                "app/view/Topics.js"
+            ],
+            "className": "Topics"
+        },
+        "167da5b4-e465-44eb-bf9d-67e3a220968a": {
+            "paths": [
+                "metadata/view/SubTopics",
+                "app/view/override/SubTopics.js",
+                "app/view/SubTopics.js"
+            ],
+            "className": "SubTopics"
         }
     },
     "viewOrderMap": {
         "view": [
             "e05f29d8-0701-42d4-b4ab-5175e718180a",
-            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f"
+            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f",
+            "4156fd1e-d8b5-47ae-9ba3-b73eaf3742cb",
+            "167da5b4-e465-44eb-bf9d-67e3a220968a"
         ],
         "store": [
             "1c608974-bb69-469e-9459-723b0c28fe99",

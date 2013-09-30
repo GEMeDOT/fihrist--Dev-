@@ -6,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "idProperty": null,
+        "identifier": null,
         "designer|userClassName": "Topic",
         "designer|userAlias": "topic"
     },
