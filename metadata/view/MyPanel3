@@ -1,0 +1,87 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "html": null,
+        "designer|userClassName": "MyPanel3"
+    },
+    "designerId": "06c9c39d-42c4-403a-be8c-f023dd364ae8",
+    "cn": [
+        {
+            "type": "Ext.Audio",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "itemId": "mp3player",
+                "designer|displayName": "MP3Player",
+                "url": "http://www.kutsalkitap.org/fihrist/Fihrist/sesdosyalar/Rom8_18-22.mp3"
+            },
+            "designerId": "9a572659-f7e8-4cfb-b879-a1adeb8dfca9"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "controls",
+                "designer|displayName": "Controls",
+                "iconAlign": "center",
+                "iconCls": "arrow_right",
+                "text": null
+            },
+            "designerId": "9daf60ec-750b-4f8d-8b0c-fef37078e220",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onControlsTap",
+                        "implHandler": [
+                            "var audio = this.getParent().down('audio');",
+                            "if (audio.isPlaying()) {",
+                            "    audio.pause();",
+                            "    button.setText('Play audio');",
+                            "} else {",
+                            "    audio.play();",
+                            "    button.setText('Pause Audio');",
+                            "}"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "bce507af-4c84-481d-a744-70e1509ae727"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": null,
+                "height": null,
+                "itemId": "versetext",
+                "ui": "light",
+                "designer|displayName": "VerseText"
+            },
+            "designerId": "5b68521c-5a69-40b4-93bd-53dce421d484"
+        }
+    ]
+}

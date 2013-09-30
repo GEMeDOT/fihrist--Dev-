@@ -1,0 +1,37 @@
+{
+    "type": "Ext.dataview.NestedList",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "slide",
+        "designer|userClassName": "MyNestedList1",
+        "designer|initialView": true,
+        "scrollable": true,
+        "backText": "Whoa",
+        "detailCard": "MyPanel3",
+        "store": "NestedTopics"
+    },
+    "designerId": "1785addf-d6ea-4f14-9129-a926f11ff166",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNestedlistLeafItemTap",
+                "implHandler": [
+                    "var detailCard = nestedlist.getDetailCard();",
+                    "detailCard.setHtml('You selected: ' + record.get('url'));"
+                ],
+                "name": "leafitemtap"
+            },
+            "designerId": "cac96d1b-5b26-4f60-acd5-efb0e9ed21dc"
+        }
+    ]
+}

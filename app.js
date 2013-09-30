@@ -19,37 +19,27 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
-    viewport: {
-        layout: {
-            animation: 'slide',
-            type: 'card'
-        }
-    },
-
     models: [
         'Verse',
         'Topic',
-        'Subtopic'
+        'Subtopic',
+        'Nested'
     ],
     stores: [
         'Verses',
         'Topics',
-        'Subtopics'
+        'Subtopics',
+        'NestedTopics'
     ],
     views: [
-        'MainPortrait',
-        'MP3',
-        'Topics',
-        'SubTopics'
-    ],
-    controllers: [
-        'Controller'
+        'MyNestedList1',
+        'MyPanel3'
     ],
     name: 'Fihrist',
 
     launch: function() {
 
-        Ext.create('Fihrist.view.Topics', {fullscreen: true});
+        Ext.create('Fihrist.view.MyNestedList1', {fullscreen: true});
     }
 
 });

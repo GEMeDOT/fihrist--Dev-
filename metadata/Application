@@ -9,37 +9,20 @@
         "models": [
             "Verse",
             "Topic",
-            "Subtopic"
+            "Subtopic",
+            "Nested"
         ],
         "stores": [
             "Verses",
             "Topics",
-            "Subtopics"
+            "Subtopics",
+            "NestedTopics"
         ],
         "views": [
-            "MainPortrait",
-            "MP3",
-            "Topics",
-            "SubTopics"
-        ],
-        "controllers": [
-            "Controller"
+            "MyNestedList1",
+            "MyPanel3"
         ],
         "name": "Fihrist"
     },
-    "designerId": "application",
-    "cn": [
-        {
-            "type": "Ext.Viewport",
-            "reference": {
-                "name": "viewport",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "container|animation": "slide"
-            },
-            "designerId": "6338f10c-e14e-4517-adf8-bd8a52305fa0"
-        }
-    ]
+    "designerId": "application"
 }

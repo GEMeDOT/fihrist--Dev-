@@ -1,0 +1,39 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Nested"
+    },
+    "designerId": "5573c29f-86c0-4332-8fdc-44a114b0823c",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text",
+                "type": "string"
+            },
+            "designerId": "44025922-581e-4c9c-967b-8e9bcd786165"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "url"
+            },
+            "designerId": "2fcbe4c5-e1a0-41e6-a438-62f20389ca38"
+        }
+    ]
+}

@@ -17,14 +17,6 @@
             ],
             "className": "Library"
         },
-        "e05f29d8-0701-42d4-b4ab-5175e718180a": {
-            "paths": [
-                "metadata/view/MainPortrait",
-                "app/view/override/MainPortrait.js",
-                "app/view/MainPortrait.js"
-            ],
-            "className": "MainPortrait"
-        },
         "167205a3-3047-4b56-b80c-ab3f0f6e707a": {
             "paths": [
                 "metadata/model/Verse",
@@ -73,22 +65,6 @@
             ],
             "className": "Subtopics"
         },
-        "a7edb770-5b04-4ca6-8df6-71f9f4d5187f": {
-            "paths": [
-                "metadata/view/MP3",
-                "app/view/override/MP3.js",
-                "app/view/MP3.js"
-            ],
-            "className": "MP3"
-        },
-        "b05fc99c-2806-40f8-9519-b6fc1a8e287e": {
-            "paths": [
-                "metadata/controller/Controller",
-                "app/controller/override/Controller.js",
-                "app/controller/Controller.js"
-            ],
-            "className": "Controller"
-        },
         "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e": {
             "paths": [
                 "metadata/resource/packager",
@@ -97,42 +73,56 @@
             ],
             "className": "packager"
         },
-        "4156fd1e-d8b5-47ae-9ba3-b73eaf3742cb": {
+        "5573c29f-86c0-4332-8fdc-44a114b0823c": {
             "paths": [
-                "metadata/view/Topics",
-                "app/view/override/Topics.js",
-                "app/view/Topics.js"
+                "metadata/model/Nested",
+                "app/model/override/Nested.js",
+                "app/model/Nested.js"
             ],
-            "className": "Topics"
+            "className": "Nested"
         },
-        "167da5b4-e465-44eb-bf9d-67e3a220968a": {
+        "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c": {
             "paths": [
-                "metadata/view/SubTopics",
-                "app/view/override/SubTopics.js",
-                "app/view/SubTopics.js"
+                "metadata/store/NestedTopics",
+                "app/store/override/NestedTopics.js",
+                "app/store/NestedTopics.js"
             ],
-            "className": "SubTopics"
+            "className": "NestedTopics"
+        },
+        "1785addf-d6ea-4f14-9129-a926f11ff166": {
+            "paths": [
+                "metadata/view/MyNestedList1",
+                "app/view/override/MyNestedList1.js",
+                "app/view/MyNestedList1.js"
+            ],
+            "className": "MyNestedList1"
+        },
+        "06c9c39d-42c4-403a-be8c-f023dd364ae8": {
+            "paths": [
+                "metadata/view/MyPanel3",
+                "app/view/override/MyPanel3.js",
+                "app/view/MyPanel3.js"
+            ],
+            "className": "MyPanel3"
         }
     },
     "viewOrderMap": {
         "view": [
-            "e05f29d8-0701-42d4-b4ab-5175e718180a",
-            "a7edb770-5b04-4ca6-8df6-71f9f4d5187f",
-            "4156fd1e-d8b5-47ae-9ba3-b73eaf3742cb",
-            "167da5b4-e465-44eb-bf9d-67e3a220968a"
+            "1785addf-d6ea-4f14-9129-a926f11ff166",
+            "06c9c39d-42c4-403a-be8c-f023dd364ae8"
         ],
         "store": [
             "1c608974-bb69-469e-9459-723b0c28fe99",
             "2caa9f32-f15f-49a7-8df4-9f1d71e20769",
-            "6887b99d-807e-4ce6-aab7-54499fde361e"
+            "6887b99d-807e-4ce6-aab7-54499fde361e",
+            "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c"
         ],
-        "controller": [
-            "b05fc99c-2806-40f8-9519-b6fc1a8e287e"
-        ],
+        "controller": [],
         "model": [
             "167205a3-3047-4b56-b80c-ab3f0f6e707a",
             "0ba0c2b4-699e-4a3b-a1f1-cf934899ef28",
-            "d926b05f-8075-4ed0-9652-6cd03d8548b3"
+            "d926b05f-8075-4ed0-9652-6cd03d8548b3",
+            "5573c29f-86c0-4332-8fdc-44a114b0823c"
         ],
         "resource": [
             "2435892b-176b-4caa-9d0a-61fc273af78b",
