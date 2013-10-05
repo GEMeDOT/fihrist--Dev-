@@ -27,11 +27,11 @@ Ext.define('Fihrist.view.MyPanel3', {
                 xtype: 'button',
                 centered: false,
                 docked: 'top',
+                html: '<img src="/fihristDev/resources//btns/play.png" />',
                 itemId: 'controls',
                 margin: '20 auto',
                 maxWidth: '30%',
-                iconAlign: 'center',
-                iconCls: 'arrow_right'
+                iconAlign: 'center'
             },
             {
                 xtype: 'component',
@@ -55,10 +55,10 @@ Ext.define('Fihrist.view.MyPanel3', {
         var audio = this.getParent().down('audio');
         if (audio.isPlaying()) {
             audio.pause();
-            button.setText('Play audio');
+            button.setHtml('<img src="/fihristDev/resources//btns/play.png" />');
         } else {
             audio.play();
-            button.setText('Pause Audio');
+            button.setHtml('<img src="/fihristDev/resources//btns/pause.png" />');
         }
     }
 

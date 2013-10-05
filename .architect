@@ -135,11 +135,11 @@
         "topInstance": null
     },
     "inspectorState": {
-        "topInstance": "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c",
-        "selectedInstance": "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c"
+        "topInstance": "06c9c39d-42c4-403a-be8c-f023dd364ae8",
+        "selectedInstance": "bce507af-4c84-481d-a744-70e1509ae727"
     },
     "codeState": {
-        "topInstance": "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c"
+        "topInstance": "06c9c39d-42c4-403a-be8c-f023dd364ae8"
     },
-    "editMode": "design"
+    "editMode": "code"
 }

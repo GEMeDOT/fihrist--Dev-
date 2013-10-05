@@ -36,13 +36,14 @@
             "userConfig": {
                 "centered": false,
                 "docked": "top",
+                "html": "<img src=\"/fihristDev/resources//btns/play.png\" />",
                 "itemId": "controls",
                 "margin": "20 auto",
                 "maxWidth": "30%",
                 "padding": null,
                 "designer|displayName": "Controls",
                 "iconAlign": "center",
-                "iconCls": "arrow_right",
+                "iconCls": null,
                 "text": null
             },
             "designerId": "9daf60ec-750b-4f8d-8b0c-fef37078e220",
@@ -60,10 +61,10 @@
                             "var audio = this.getParent().down('audio');",
                             "if (audio.isPlaying()) {",
                             "    audio.pause();",
-                            "    button.setText('Play audio');",
+                            "    button.setHtml('<img src=\"/fihristDev/resources//btns/play.png\" />');",
                             "} else {",
                             "    audio.play();",
-                            "    button.setText('Pause Audio');",
+                            "    button.setHtml('<img src=\"/fihristDev/resources//btns/pause.png\" />');",
                             "}"
                         ],
                         "name": "tap"
