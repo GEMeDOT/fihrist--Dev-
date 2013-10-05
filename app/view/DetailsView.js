@@ -18,6 +18,7 @@ Ext.define('Fihrist.view.DetailsView', {
 
     config: {
         ui: '',
+        scrollable: true,
         items: [
             {
                 xtype: 'audio',
@@ -45,11 +46,20 @@ Ext.define('Fihrist.view.DetailsView', {
         ],
         listeners: [
             {
+                fn: 'onMp3playerTimeupdate',
+                event: 'timeupdate',
+                delegate: '#mp3player'
+            },
+            {
                 fn: 'onControlsTap',
                 event: 'tap',
                 delegate: '#controls'
             }
         ]
+    },
+
+    onMp3playerTimeupdate: function(media, time, eOpts) {
+
     },
 
     onControlsTap: function(button, e, eOpts) {

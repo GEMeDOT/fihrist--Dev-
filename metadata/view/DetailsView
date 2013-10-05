@@ -8,7 +8,8 @@
     "userConfig": {
         "html": null,
         "ui": "",
-        "designer|userClassName": "DetailsView"
+        "designer|userClassName": "DetailsView",
+        "scrollable": true
     },
     "designerId": "06c9c39d-42c4-403a-be8c-f023dd364ae8",
     "cn": [
@@ -25,7 +26,25 @@
                 "designer|displayName": "MP3Player",
                 "url": null
             },
-            "designerId": "9a572659-f7e8-4cfb-b879-a1adeb8dfca9"
+            "designerId": "9a572659-f7e8-4cfb-b879-a1adeb8dfca9",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMp3playerTimeupdate",
+                        "implHandler": [
+                            ""
+                        ],
+                        "name": "timeupdate"
+                    },
+                    "designerId": "ffdf71a0-abcf-47e6-875d-4253b7267f90"
+                }
+            ]
         },
         {
             "type": "Ext.Button",
