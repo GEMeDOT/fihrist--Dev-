@@ -3,7 +3,7 @@
     "settings": {
         "urlPrefix": "http://localhost:8888/fihristDev/",
         "exportPath": "",
-        "sdkPath": "/Users/courtneyroes/Documents/touch-2.2.1"
+        "sdkPath": "/Users/courtneyroes/Documents/touch-2.3.0"
     },
     "xdsVersion": "2.2.2",
     "xdsBuild": 991,
