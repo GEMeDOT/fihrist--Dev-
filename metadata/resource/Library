@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Library",
-        "basePath": null
+        "basePath": "touch/"
     },
     "designerId": "2435892b-176b-4caa-9d0a-61fc273af78b"
 }

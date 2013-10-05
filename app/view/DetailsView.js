@@ -31,7 +31,7 @@ Ext.define('Fihrist.view.DetailsView', {
                 html: '<img src="resources/btns/play.png" />',
                 itemId: 'controls',
                 margin: '20 auto',
-                maxWidth: '30%',
+                maxWidth: '80%',
                 iconAlign: 'center'
             },
             {
