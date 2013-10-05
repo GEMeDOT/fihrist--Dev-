@@ -104,6 +104,12 @@
                 "app/view/DetailsView.js"
             ],
             "className": "DetailsView"
+        },
+        "6fb2e793-9de3-4682-829c-45dce0f307a8": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
@@ -126,7 +132,8 @@
         ],
         "resource": [
             "2435892b-176b-4caa-9d0a-61fc273af78b",
-            "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e"
+            "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e",
+            "6fb2e793-9de3-4682-829c-45dce0f307a8"
         ],
         "app": [
             "application"
