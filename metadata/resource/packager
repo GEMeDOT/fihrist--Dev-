@@ -26,12 +26,7 @@
         "androidAPILevel": "8",
         "permissions": [
             "INTERNET",
-            "ACCESS_NETWORK_STATE",
-            "CAMERA",
-            "VIBRATE",
-            "ACCESS_FINE_LOCATION",
-            "ACCESS_COARSE_LOCATION",
-            "CALL_PHONE"
+            "ACCESS_NETWORK_STATE"
         ],
         "orientations": [
             "portrait",
