@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "html": null,
-        "designer|userClassName": "MyPanel3"
+        "ui": "",
+        "designer|userClassName": "DetailsView"
     },
     "designerId": "06c9c39d-42c4-403a-be8c-f023dd364ae8",
     "cn": [
@@ -36,7 +37,7 @@
             "userConfig": {
                 "centered": false,
                 "docked": "top",
-                "html": "<img src=\"/fihristDev/resources//btns/play.png\" />",
+                "html": "<img src=\"resources/btns/play.png\" />",
                 "itemId": "controls",
                 "margin": "20 auto",
                 "maxWidth": "30%",
@@ -61,10 +62,10 @@
                             "var audio = this.getParent().down('audio');",
                             "if (audio.isPlaying()) {",
                             "    audio.pause();",
-                            "    button.setHtml('<img src=\"/fihristDev/resources//btns/play.png\" />');",
+                            "    button.setHtml('<img src=\"resources/btns/play.png\" />');",
                             "} else {",
                             "    audio.play();",
-                            "    button.setHtml('<img src=\"/fihristDev/resources//btns/pause.png\" />');",
+                            "    button.setHtml('<img src=\"resources/btns/pause.png\" />');",
                             "}"
                         ],
                         "name": "tap"

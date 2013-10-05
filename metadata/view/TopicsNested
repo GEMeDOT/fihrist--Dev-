@@ -7,11 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "container|animation": "slide",
-        "designer|userClassName": "MyNestedList1",
+        "designer|userClassName": "TopicsNested",
         "designer|initialView": true,
         "scrollable": true,
         "backText": null,
-        "detailCard": "MyPanel3",
+        "detailCard": "DetailsView",
         "store": "NestedTopics",
         "title": "fihrist"
     },

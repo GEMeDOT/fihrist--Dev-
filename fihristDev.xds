@@ -91,19 +91,19 @@
         },
         "1785addf-d6ea-4f14-9129-a926f11ff166": {
             "paths": [
-                "metadata/view/MyNestedList1",
-                "app/view/override/MyNestedList1.js",
-                "app/view/MyNestedList1.js"
+                "metadata/view/TopicsNested",
+                "app/view/override/TopicsNested.js",
+                "app/view/TopicsNested.js"
             ],
-            "className": "MyNestedList1"
+            "className": "TopicsNested"
         },
         "06c9c39d-42c4-403a-be8c-f023dd364ae8": {
             "paths": [
-                "metadata/view/MyPanel3",
-                "app/view/override/MyPanel3.js",
-                "app/view/MyPanel3.js"
+                "metadata/view/DetailsView",
+                "app/view/override/DetailsView.js",
+                "app/view/DetailsView.js"
             ],
-            "className": "MyPanel3"
+            "className": "DetailsView"
         }
     },
     "viewOrderMap": {

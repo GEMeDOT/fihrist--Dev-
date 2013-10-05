@@ -19,8 +19,8 @@
             "NestedTopics"
         ],
         "views": [
-            "MyNestedList1",
-            "MyPanel3"
+            "TopicsNested",
+            "DetailsView"
         ],
         "name": "Fihrist"
     },

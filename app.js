@@ -32,14 +32,14 @@ Ext.application({
         'NestedTopics'
     ],
     views: [
-        'MyNestedList1',
-        'MyPanel3'
+        'TopicsNested',
+        'DetailsView'
     ],
     name: 'Fihrist',
 
     launch: function() {
 
-        Ext.create('Fihrist.view.MyNestedList1', {fullscreen: true});
+        Ext.create('Fihrist.view.TopicsNested', {fullscreen: true});
     }
 
 });
