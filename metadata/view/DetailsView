@@ -38,6 +38,31 @@
                     "userConfig": {
                         "fn": "onMp3playerTimeupdate",
                         "implHandler": [
+                            "var duration = media.getDuration();",
+                            "var mp3slider = media.getParent().down('sliderfield');",
+                            "var position = (time / duration) * 100;",
+                            "mp3slider.setValue(position);",
+                            "",
+                            "var tick = Math.floor(duration);",
+                            "    var mins = Math.floor(tick/60);",
+                            "    var secs = tick % 60;",
+                            "    var tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
+                            "",
+                            "duration = tock;",
+                            "",
+                            "tick = Math.floor(time);",
+                            "mins = Math.floor(tick/60);",
+                            "secs = tick % 60;",
+                            "tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
+                            "position = tock;",
+                            "",
+                            "mp3slider.setLabel( position + '<br /><hr />' + duration);",
+                            "",
+                            "var button = media.getParent().down('button');",
+                            "if ( position == duration ) {",
+                            "    media.pause();",
+                            "    button.setHtml('<img src=\"resources/btns/play.png\" />');",
+                            "}",
                             ""
                         ],
                         "name": "timeupdate"
@@ -85,11 +110,109 @@
                             "} else {",
                             "    audio.play();",
                             "    button.setHtml('<img src=\"resources/btns/pause.png\" />');",
+                            "    var audioDurationnum = audio.getDuration();",
+                            "",
+                            "\tvar mp3slider = this.getParent().down('sliderfield');",
+                            "    ",
+                            "    var tick = Math.floor(audioDurationnum);",
+                            "    var mins = Math.floor(tick/60);",
+                            "    var secs = tick % 60;",
+                            "    var tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
+                            "",
+                            "\tmp3slider.setLabel(tock);",
                             "}"
                         ],
                         "name": "tap"
                     },
                     "designerId": "bce507af-4c84-481d-a744-70e1509ae727"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Slider",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "top",
+                "itemId": "mp3slider",
+                "margin": "0 auto 5px",
+                "maxWidth": "80%",
+                "designer|displayName": "MP3Slider",
+                "label": null,
+                "labelAlign": "right",
+                "name": "MP3Slider"
+            },
+            "designerId": "de080430-c4a0-4f1b-b12d-2b7488e190a7",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMp3sliderDrag",
+                        "implHandler": [
+                            "var audio = this.getParent().down('audio');",
+                            "audio.pause();",
+                            "",
+                            "var button = this.getComponent('controls');",
+                            "button.setHtml('<img src=\"resources/btns/play.png\" />');"
+                        ],
+                        "name": "drag"
+                    },
+                    "designerId": "691690e9-32c7-402c-8dc2-6c67f3425cb1"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMp3sliderDragEnd",
+                        "implHandler": [
+                            "var audio = this.getComponent('mp3player');",
+                            "",
+                            "var duration = audio.getDuration();",
+                            "",
+                            "var position = value;",
+                            "sliderfield.setValue(position);",
+                            "",
+                            "position = ((value / 100) * duration);",
+                            "",
+                            "audio.setCurrentTime(position);",
+                            "",
+                            "var tick = Math.floor(duration);",
+                            "    var mins = Math.floor(tick/60);",
+                            "    var secs = tick % 60;",
+                            "    var tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
+                            "",
+                            "duration = tock;",
+                            "",
+                            "",
+                            "tick = Math.floor(position);",
+                            "mins = Math.floor(tick/60);",
+                            "secs = tick % 60;",
+                            "tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
+                            "position = tock;",
+                            "",
+                            "sliderfield.setLabel( position + '<br /><hr />' + duration);",
+                            "",
+                            "audio.play();",
+                            "",
+                            "var button = this.getComponent('controls');",
+                            "button.setHtml('<img src=\"resources/btns/pause.png\" />');"
+                        ],
+                        "name": "dragend"
+                    },
+                    "designerId": "759c6344-1bb3-4444-a6aa-8576fe45f475"
                 }
             ]
         },
@@ -101,11 +224,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "border": 5,
+                "border": null,
                 "centered": true,
                 "docked": null,
                 "height": null,
                 "itemId": "versetext",
+                "maxWidth": null,
                 "ui": "light",
                 "width": "90%",
                 "designer|displayName": "VerseText"
