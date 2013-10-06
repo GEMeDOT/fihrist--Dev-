@@ -40,8 +40,8 @@ Ext.define('Fihrist.view.TopicsNested', {
         //detailCard.setHtml(record.get('vtext'));
         var VerseText = detailCard.getComponent( 'versetext' );
         VerseText.setHtml(record.get('vtext'));
-        var audioURL = detailCard.getComponent('mp3player');
-        audioURL.setUrl(record.get('url'));
+        var audio = detailCard.getComponent('mp3player');
+        audio.setUrl(record.get('url'));
     }
 
 });
