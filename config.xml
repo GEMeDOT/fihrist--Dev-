@@ -5,7 +5,7 @@
 	versioncode = "1"
 	version 	= "0.1.0">
 
-	<name>fihrist</name>
+	<name>Fihrist</name>
 
 	<description>
 		A Turkish Bible Concordance
@@ -15,7 +15,7 @@
 		Courtney Roes
 	</author>
 	
-	<preference name="phonegap-version" value="2.9.0" />
+	<preference name="phonegap-version" value="3.0.0" />
 	
 	<preference name="fullscreen" value="true" />
 	
