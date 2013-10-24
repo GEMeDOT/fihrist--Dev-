@@ -18,7 +18,7 @@ Ext.define('Fihrist.view.DetailsView', {
 
     config: {
         ui: '',
-        scrollable: true,
+        scrollable: 'vertical',
         items: [
             {
                 xtype: 'audio',
@@ -49,8 +49,8 @@ Ext.define('Fihrist.view.DetailsView', {
                 xtype: 'component',
                 centered: true,
                 itemId: 'versetext',
-                ui: 'light',
-                width: '90%'
+                padding: '0 10% 0 10%',
+                ui: 'light'
             }
         ],
         listeners: [

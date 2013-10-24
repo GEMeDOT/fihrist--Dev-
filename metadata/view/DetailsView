@@ -9,7 +9,7 @@
         "html": null,
         "ui": "",
         "designer|userClassName": "DetailsView",
-        "scrollable": true
+        "scrollable": "vertical"
     },
     "designerId": "06c9c39d-42c4-403a-be8c-f023dd364ae8",
     "cn": [
@@ -190,9 +190,9 @@
                             "audio.setCurrentTime(position);",
                             "",
                             "var tick = Math.floor(duration);",
-                            "    var mins = Math.floor(tick/60);",
-                            "    var secs = tick % 60;",
-                            "    var tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
+                            "var mins = Math.floor(tick/60);",
+                            "var secs = tick % 60;",
+                            "var tock = (mins < 10 ? \"0\" : \"\" ) + mins + \":\" + (secs < 10 ? \"0\" : \"\" ) + secs;",
                             "",
                             "duration = tock;",
                             "",
@@ -224,17 +224,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "border": null,
                 "centered": true,
-                "docked": null,
-                "height": null,
                 "itemId": "versetext",
-                "maxWidth": null,
+                "padding": "0 10% 0 10%",
+                "right": null,
                 "ui": "light",
-                "width": "90%",
                 "designer|displayName": "VerseText"
             },
-            "designerId": "5b68521c-5a69-40b4-93bd-53dce421d484"
+            "designerId": "6066fe06-d0be-4b08-86b3-2abc0ba96c6e"
         }
     ]
 }

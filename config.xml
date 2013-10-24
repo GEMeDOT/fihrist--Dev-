@@ -30,7 +30,7 @@
 	<icon src="resources/icons/Icon@2x.png" gap:platform="android" gap:density="hdpi" />
 	<icon src="resources/icons/Icon~ipad@2x.png" gap:platform="android" gap:density="xhdpi" />
 	
-	<preference name="splash-screen-duration" value="10000" />
+
 	<gap:splash src="splash.png" />
 	<gap:splash src="resources/startup/320x480.jpg" width="320" height="480" />
 	<gap:splash src="resources/startup/640x920.png" width="640" height="960" />
