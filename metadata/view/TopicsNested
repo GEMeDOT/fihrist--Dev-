@@ -10,10 +10,10 @@
         "designer|userClassName": "TopicsNested",
         "designer|initialView": true,
         "scrollable": true,
-        "backText": null,
+        "backText": "BinTurkish",
         "detailCard": "DetailsView",
         "store": "NestedTopics",
-        "title": "fihrist"
+        "title": "Fihrist"
     },
     "designerId": "1785addf-d6ea-4f14-9129-a926f11ff166",
     "cn": [
@@ -37,6 +37,51 @@
                 "name": "leafitemtap"
             },
             "designerId": "cac96d1b-5b26-4f60-acd5-efb0e9ed21dc"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "toolbar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "3dd6e5a5-79d3-4b75-b28b-99174e5f6baf",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "right",
+                        "itemId": "infoBtn",
+                        "designer|displayName": "info",
+                        "iconCls": "info",
+                        "text": null
+                    },
+                    "designerId": "b767a798-e53e-4165-b03e-b43ce161729e",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onInfoBtnTap",
+                                "implHandler": [
+                                    "console.log('infoBtn has been tapped');"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "43bc0ad0-ea9b-4de6-a8c0-83ccbb69953d"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
