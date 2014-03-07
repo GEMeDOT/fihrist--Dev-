@@ -27,9 +27,9 @@
             "    { UID: 'V15', MP3URL: 'Ibr5_7-9.mp3', LocalURL: '', text: 'İbr.5:7-9' }",
             "]"
         ],
-        "designer|userClassName": "Verses",
         "model": "Verse",
-        "storeId": "verses"
+        "storeId": "verses",
+        "designer|userClassName": "Verses"
     },
     "designerId": "1c608974-bb69-469e-9459-723b0c28fe99",
     "cn": [

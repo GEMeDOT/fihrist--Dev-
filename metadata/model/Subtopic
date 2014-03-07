@@ -6,9 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "subtopic",
+        "idProperty": null,
+        "identifier": null,
         "designer|userClassName": "Subtopic",
-        "idProperty": null
+        "designer|userAlias": "subtopic"
     },
     "designerId": "d926b05f-8075-4ed0-9652-6cd03d8548b3",
     "cn": [

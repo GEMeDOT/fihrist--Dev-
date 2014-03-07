@@ -7,8 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "css",
-        "id": "fihrist.css",
-        "url": "resources/css/fihrist.css"
+        "url": "resources/css/fihrist.css",
+        "id": "fihrist.css"
     },
     "designerId": "6fb2e793-9de3-4682-829c-45dce0f307a8"
 }

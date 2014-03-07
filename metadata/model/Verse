@@ -6,8 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Verse",
-        "idProperty": null
+        "idProperty": null,
+        "identifier": null,
+        "designer|userClassName": "Verse"
     },
     "designerId": "167205a3-3047-4b56-b80c-ab3f0f6e707a",
     "cn": [

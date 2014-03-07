@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "backText": "BinTurkish",
         "container|animation": "slide",
-        "designer|initialView": true,
         "designer|userClassName": "TopicsNested",
-        "detailCard": "DetailsView",
+        "designer|initialView": true,
         "scrollable": true,
+        "backText": "BinTurkish",
+        "detailCard": "DetailsView",
         "store": "NestedTopics",
         "title": "Fihrist"
     },
@@ -55,10 +55,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "info",
                         "docked": "right",
-                        "iconCls": "info",
                         "itemId": "infoBtn",
+                        "designer|displayName": "info",
+                        "iconCls": "info",
                         "text": null
                     },
                     "designerId": "b767a798-e53e-4165-b03e-b43ce161729e",

@@ -15,10 +15,10 @@
             "\t{ UID: 'T5', Name: 'aklanma', subtopic: '' }\t",
             "]"
         ],
-        "designer|userAlias": "topics",
-        "designer|userClassName": "Topics",
         "model": "Topic",
-        "storeId": "topics"
+        "storeId": "topics",
+        "designer|userClassName": "Topics",
+        "designer|userAlias": "topics"
     },
     "designerId": "2caa9f32-f15f-49a7-8df4-9f1d71e20769"
 }

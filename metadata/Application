@@ -12,7 +12,6 @@
             "Subtopic",
             "Nested"
         ],
-        "name": "Fihrist",
         "stores": [
             "Verses",
             "Topics",
@@ -22,7 +21,8 @@
         "views": [
             "TopicsNested",
             "DetailsView"
-        ]
+        ],
+        "name": "Fihrist"
     },
     "designerId": "application"
 }

@@ -117,12 +117,12 @@
             "         }]",
             "}"
         ],
-        "defaultRootId": null,
-        "defaultRootProperty": "items",
-        "designer|userClassName": "NestedTopics",
         "groupField": null,
         "model": "Nested",
-        "storeId": "NestedTopics"
+        "storeId": "NestedTopics",
+        "designer|userClassName": "NestedTopics",
+        "defaultRootId": null,
+        "defaultRootProperty": "items"
     },
     "designerId": "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c"
 }

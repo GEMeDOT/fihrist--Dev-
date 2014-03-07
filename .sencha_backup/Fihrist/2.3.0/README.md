@@ -1,4 +1,0 @@
-fihrist--Dev-
-=============
-
-Bible Concordance

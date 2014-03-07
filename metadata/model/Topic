@@ -6,9 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "topic",
+        "idProperty": null,
+        "identifier": null,
         "designer|userClassName": "Topic",
-        "idProperty": null
+        "designer|userAlias": "topic"
     },
     "designerId": "0ba0c2b4-699e-4a3b-a1f1-cf934899ef28",
     "cn": [

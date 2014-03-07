@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "DetailsView",
         "html": null,
-        "scrollable": "vertical",
-        "ui": ""
+        "ui": "",
+        "designer|userClassName": "DetailsView",
+        "scrollable": "vertical"
     },
     "designerId": "06c9c39d-42c4-403a-be8c-f023dd364ae8",
     "cn": [
@@ -21,9 +21,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "MP3Player",
                 "hidden": true,
                 "itemId": "mp3player",
+                "designer|displayName": "MP3Player",
                 "url": null
             },
             "designerId": "9a572659-f7e8-4cfb-b879-a1adeb8dfca9",
@@ -80,15 +80,15 @@
             "codeClass": null,
             "userConfig": {
                 "centered": false,
-                "designer|displayName": "Controls",
                 "docked": "top",
                 "html": "<img src=\"resources/btns/play.png\" />",
-                "iconAlign": "center",
-                "iconCls": null,
                 "itemId": "controls",
                 "margin": "20 auto",
                 "maxWidth": "80%",
                 "padding": null,
+                "designer|displayName": "Controls",
+                "iconAlign": "center",
+                "iconCls": null,
                 "text": null
             },
             "designerId": "9daf60ec-750b-4f8d-8b0c-fef37078e220",
@@ -113,7 +113,7 @@
                             "    var audioDurationnum = audio.getDuration();",
                             "",
                             "\tvar mp3slider = this.getParent().down('sliderfield');",
-                            "",
+                            "    ",
                             "    var tick = Math.floor(audioDurationnum);",
                             "    var mins = Math.floor(tick/60);",
                             "    var secs = tick % 60;",
@@ -137,13 +137,13 @@
             "codeClass": null,
             "userConfig": {
                 "centered": false,
-                "designer|displayName": "MP3Slider",
                 "docked": "top",
                 "itemId": "mp3slider",
-                "label": null,
-                "labelAlign": "right",
                 "margin": "0 auto 5px",
                 "maxWidth": "80%",
+                "designer|displayName": "MP3Slider",
+                "label": null,
+                "labelAlign": "right",
                 "name": "MP3Slider"
             },
             "designerId": "de080430-c4a0-4f1b-b12d-2b7488e190a7",
@@ -225,11 +225,11 @@
             "codeClass": null,
             "userConfig": {
                 "centered": true,
-                "designer|displayName": "VerseText",
                 "itemId": "versetext",
                 "padding": "0 10% 0 10%",
                 "right": null,
-                "ui": "light"
+                "ui": "light",
+                "designer|displayName": "VerseText"
             },
             "designerId": "6066fe06-d0be-4b08-86b3-2abc0ba96c6e"
         }

@@ -17,10 +17,10 @@
             "    { UID: 'S7', text: \"Mesih'in örneği\", verse: 'V15' }",
             "]"
         ],
-        "designer|userAlias": "subtopics",
-        "designer|userClassName": "Subtopics",
         "model": "Subtopic",
-        "storeId": "subtopics"
+        "storeId": "subtopics",
+        "designer|userClassName": "Subtopics",
+        "designer|userAlias": "subtopics"
     },
     "designerId": "6887b99d-807e-4ce6-aab7-54499fde361e"
 }
