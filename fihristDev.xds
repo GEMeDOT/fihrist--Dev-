@@ -1,117 +1,37 @@
 {
     "name": "fihristDev",
     "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
         "urlPrefix": "http://localhost:8888/fihristDev/",
         "exportPath": "",
-        "sdkPath": "/Users/courtneyroes/Documents/touch-2.3.0"
-    },
-    "xdsVersion": "2.2.3",
-    "xdsBuild": 1044,
-    "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
-    "framework": "touch22",
-    "topInstanceFileMap": {
-        "2435892b-176b-4caa-9d0a-61fc273af78b": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
+        "sdkPath": "/Users/courtneyroes/Documents/touch-2.3.0",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
         },
-        "167205a3-3047-4b56-b80c-ab3f0f6e707a": {
-            "paths": [
-                "metadata/model/Verse",
-                "app/model/override/Verse.js",
-                "app/model/Verse.js"
-            ],
-            "className": "Verse"
-        },
-        "1c608974-bb69-469e-9459-723b0c28fe99": {
-            "paths": [
-                "metadata/store/Verses",
-                "app/store/override/Verses.js",
-                "app/store/Verses.js"
-            ],
-            "className": "Verses"
-        },
-        "0ba0c2b4-699e-4a3b-a1f1-cf934899ef28": {
-            "paths": [
-                "metadata/model/Topic",
-                "app/model/override/Topic.js",
-                "app/model/Topic.js"
-            ],
-            "className": "Topic"
-        },
-        "d926b05f-8075-4ed0-9652-6cd03d8548b3": {
-            "paths": [
-                "metadata/model/Subtopic",
-                "app/model/override/Subtopic.js",
-                "app/model/Subtopic.js"
-            ],
-            "className": "Subtopic"
-        },
-        "2caa9f32-f15f-49a7-8df4-9f1d71e20769": {
-            "paths": [
-                "metadata/store/Topics",
-                "app/store/override/Topics.js",
-                "app/store/Topics.js"
-            ],
-            "className": "Topics"
-        },
-        "6887b99d-807e-4ce6-aab7-54499fde361e": {
-            "paths": [
-                "metadata/store/Subtopics",
-                "app/store/override/Subtopics.js",
-                "app/store/Subtopics.js"
-            ],
-            "className": "Subtopics"
-        },
-        "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e": {
-            "paths": [
-                "metadata/resource/packager",
-                "",
-                "packager.json"
-            ],
-            "className": "packager"
-        },
-        "5573c29f-86c0-4332-8fdc-44a114b0823c": {
-            "paths": [
-                "metadata/model/Nested",
-                "app/model/override/Nested.js",
-                "app/model/Nested.js"
-            ],
-            "className": "Nested"
-        },
-        "e1eb1fb6-7f08-4985-8c03-f467fe38fd1c": {
-            "paths": [
-                "metadata/store/NestedTopics",
-                "app/store/override/NestedTopics.js",
-                "app/store/NestedTopics.js"
-            ],
-            "className": "NestedTopics"
-        },
-        "1785addf-d6ea-4f14-9129-a926f11ff166": {
-            "paths": [
-                "metadata/view/TopicsNested",
-                "app/view/override/TopicsNested.js",
-                "app/view/TopicsNested.js"
-            ],
-            "className": "TopicsNested"
-        },
-        "06c9c39d-42c4-403a-be8c-f023dd364ae8": {
-            "paths": [
-                "metadata/view/DetailsView",
-                "app/view/override/DetailsView.js",
-                "app/view/DetailsView.js"
-            ],
-            "className": "DetailsView"
-        },
-        "6fb2e793-9de3-4682-829c-45dce0f307a8": {
-            "paths": [
-                "metadata/resource/css"
-            ],
-            "className": "css"
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
         }
     },
+    "xdsVersion": "3.0.2",
+    "xdsBuild": 1375,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "touch22",
     "viewOrderMap": {
         "view": [
             "1785addf-d6ea-4f14-9129-a926f11ff166",
@@ -132,7 +52,6 @@
         ],
         "resource": [
             "2435892b-176b-4caa-9d0a-61fc273af78b",
-            "e76dfaa3-4556-42ac-b51e-2fbddf9d3e3e",
             "6fb2e793-9de3-4682-829c-45dce0f307a8"
         ],
         "app": [

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.edotgeek.fihrist"
+	versioncode = "1"
+	version 	= "0.1.0">
+
+	<name>Fihrist</name>
+
+	<description>
+		A Turkish Bible Concordance
+	</description>
+
+	<author href="http://eDOTGeek.github.com"  email="croes@gemedot.com">
+		Courtney Roes
+	</author>
+	
+	<preference name="phonegap-version" value="3.0.0" />
+	
+	<preference name="fullscreen" value="true" />
+	
+	<preference name="webviewbounce" value="false" />
+	
+	<icon src="icon.png" />
+	<icon src="resources/icons/Icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="resources/icons/Icon~ipad.png" gap:platform="ios" width="72" height="72" />
+	<icon src="resources/icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />
+	<icon src="resources/icons/Icon.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="resources/icons/Icon~ipad.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="resources/icons/Icon@2x.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="resources/icons/Icon~ipad@2x.png" gap:platform="android" gap:density="xhdpi" />
+	
+
+	<gap:splash src="splash.png" />
+	<gap:splash src="resources/startup/320x480.jpg" width="320" height="480" />
+	<gap:splash src="resources/startup/640x920.png" width="640" height="960" />
+	<gap:splash src="resources/startup/640x1136.png" width="640" height="1136" />
+	<gap:splash src="resources/startup/1024x768.png" width="1024" height="768" />
+	<gap:splash src="resources/startup/768x1024.png" width="768" height="1024" />
+	<gap:splash src="resources/startup/320x460.jpg" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="resources/startup/640x920.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="resources/startup/640x920.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="resources/startup/748x1024.png" gap:platform="android" gap:density="xhdpi" />
+	
+	<preference name="permissions" value="none"/>
+	
+	<preference name="android-installLocation" value="auto" />
+
+
+	<access origin="http://www.kutsalkitap.org" />	
+	<feature name="http://api.phonegap.com/1.0/media"/>
+
+</widget>
